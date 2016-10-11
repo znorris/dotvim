@@ -39,9 +39,9 @@ fi
 ln -s ${basedir}/vimrc ~/.vimrc
 ln -s ${basedir}/gvimrc ~/.gvimrc
 
-# Get plugins
-cd ~/.vim
-git submodule update --init
+# Setup Vundle plugin manager
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # Install plugins
 vim +PluginInstall +qall
 

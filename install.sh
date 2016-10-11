@@ -36,8 +36,8 @@ if [ -f $gvimfile ]; then
 fi
 
 # Set new config files
-ln -s ${basedir}/vimrc ~/.vimrc
-ln -s ${basedir}/gvimrc ~/.gvimrc
+ln -s ${basedir}/.vimrc ~/.vimrc
+ln -s ${basedir}/.gvimrc ~/.gvimrc
 
 # Setup Vundle plugin manager
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
